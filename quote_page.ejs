@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+
+  
+
+  <h2>Here are some awesome quotes:</h2>
+
+        <% for(var key in users) { %>
+
+      "<%= users[key].quote %>"<br>
+      -<%= users[key].name %> at <%= users[key].createdAt %>
+      <hr>
+      <% } %>
+
+  </body>
+</html>
